@@ -11,3 +11,8 @@ function saludar() {
       "Hola " + nombre + ", bienvenido al sistema.";
   }
 }
+function mostrarMensaje(texto, esCorrecto) {
+  const resultado = document.getElementById("resultado");
+  resultado.textContent = texto;
+  resultado.style.color = esCorrecto ? "green" : "crimson";
+}
